@@ -14,10 +14,12 @@
 https://cdn.jsdelivr.net/gh/cjy68028-commits/-_-@main/IMG_3150..JPG
 ```
 
-## 在支持 visualize 的对话中
+## 推荐发送格式
 
-每个对话首次使用前读取 visualize 说明。展示时使用图片组件，并把完整 CDN 地址放进 `src`。建议宽度为 160px，圆角为 12px。
+直接使用 Markdown 图片。这样图片跟随回复自然排版，不会出现可视化容器的大块留白。
 
-```html
-<img src="https://cdn.jsdelivr.net/gh/cjy68028-commits/-_-@main/IMG_3150..JPG" style="width:160px;border-radius:12px;display:block">
+```markdown
+![痴迷、喜欢、爱](https://cdn.jsdelivr.net/gh/cjy68028-commits/-_-@main/IMG_3150..JPG)
 ```
+
+每条回复最多一张。正文保持一至两句，图片单独放一行。
