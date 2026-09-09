@@ -3,8 +3,13 @@
   "version": 1,
   "cdn_base": "https://cdn.jsdelivr.net/gh/cjy68028-commits/-_-@main/",
   "rendering": {
-    "preferred": "markdown_image",
-    "template": "![{meaning}]({cdn_base}{file})",
+    "preferred": "local_resized_markdown_image",
+    "source": "{cdn_base}{file}",
+    "local_format": "png",
+    "canvas_px": 120,
+    "fit": "contain",
+    "padding": "transparent",
+    "template": "![{meaning}](sandbox:{local_absolute_path})",
     "max_per_reply": 1
   },
   "stickers": [

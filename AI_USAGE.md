@@ -16,10 +16,13 @@ https://cdn.jsdelivr.net/gh/cjy68028-commits/-_-@main/IMG_3150..JPG
 
 ## 推荐发送格式
 
-直接使用 Markdown 图片。这样图片跟随回复自然排版，不会出现可视化容器的大块留白。
+1. 根据 `cdn_base` 和 `file` 得到远程原图地址。
+2. 把原图下载到当前对话可访问的本地目录。
+3. 将图片等比例缩小到 `120×120` 画布内，透明补边，不拉伸、不裁掉内容，保存为 PNG。
+4. 使用本地绝对路径发送 Markdown 图片。远程 Markdown 图片可能不显示；可视化组件会产生大块留白，不作为默认方式。
 
 ```markdown
-![痴迷、喜欢、爱](https://cdn.jsdelivr.net/gh/cjy68028-commits/-_-@main/IMG_3150..JPG)
+![痴迷、喜欢、爱](sandbox:/本地绝对路径/IMG_3150_120.png)
 ```
 
 每条回复最多一张。正文保持一至两句，图片单独放一行。
